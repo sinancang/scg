@@ -27,6 +27,7 @@ class TestingConfig(Config):
 
 class ProductionConfig(Config):
     #fetch production dbase
+    SQLALCHEMY_DATABASE_URI = 'mysql:///'
 
 config = {
         'development': DevelopmentConfig,
