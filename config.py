@@ -13,6 +13,8 @@ class Config:
     ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+    SQLALCHEMY_DATABASE_URI = os.environ.get('scg_dbase')
+
     @staticmethod
     def init_app(app):
         pass
